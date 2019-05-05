@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void mysteryl( char* , const char *);
+void mystery1( char* , const char *);
 
 int main()
 {
@@ -11,9 +11,11 @@ int main()
 
     cout << "enter two strings: ";
     cin >> string1 >> string2;
+    mystery1 ( string1 ,string2 );
+    cout << string1 << string2;
 }
 
-void mysteryl( char*s1 ,const char*s2 )
+void mystery1( char*s1 ,const char*s2 )
 {
     while ( *s1 != '\0')
         ++s1;
@@ -21,3 +23,4 @@ void mysteryl( char*s1 ,const char*s2 )
     for( ; ( *s1 = *s2 ); ++s1,++s2 )
         ;
 }
+\\ Êä³ö×Ö·û´®
